@@ -23,3 +23,14 @@ DATABASES = {
 Django中自带了一个加密和验证的模块
     `from django.contrib.auth.hashers import make_password, check_password`
 操作也简单，只需要将用户POST过来的密码make_password()之后存入到数据库中，验证的时候根据用户名从数据库中获取到密码，在使用check_password()方法会返回一个布尔值。
+
+# Django的一些常用查询语句
+例:
+```
+User.objects.filter(username).values('password')
+```
+这个语句翻译成MySQL的话就是
+```
+SELECT password from User WHERE username = 'xxx'
+```
+Django的ORM写的很完善了，只要数据访问量不是特别大的，基本都没问题，流量过大的话还是SQL语句的性能表现更好
