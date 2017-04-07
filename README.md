@@ -19,7 +19,6 @@ DATABASES = {
 在setting.py中设置
 ```
 LANGUAGE_CODE = 'zh-Hans'  //表示使用中文简体
-
 ```
 如果一些简单的模块可以不使用csrf这一个中间件，去setting.py中注释一下就可以了
 #关于登录注册模块的密码加密
