@@ -2,7 +2,8 @@
 这是通过Django编写的一个简易后台，为了这个后台，有必要给自己增加点知识储备了[RESTful](http://www.ruanyifeng.com/blog/2011/09/restful)
 # 关于MySQL的一些操作
 在setting.py中设置DATABASE
-    `` `DATABASES = {
+    ```Python
+    DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'hhnews',
@@ -11,7 +12,7 @@
             'HOST': 'localhost',
             'PORT': 3306
         }
-    }`` `
+    }```
 # 设置语言
 在setting.py中设置`LANGUAGE_CODE = 'zh-Hans'`  表示使用中文简体
 如果一些简单的模块可以不使用csrf这一个中间件，去setting.py中注释一下就可以了
