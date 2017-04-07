@@ -14,6 +14,7 @@ DATABASES = {
     }
 }
 ```
+使用了pymysql模块，只需要使用pip install pymysql，还有一个地方要注意的是，如果当前环境中没有安装mysqlclient的话，还需要用pip安装一下，不然会导致在初始化表的时候报错python manage.py makemigrations
 # 设置语言
 在setting.py中设置`LANGUAGE_CODE = 'zh-Hans'`  表示使用中文简体
 如果一些简单的模块可以不使用csrf这一个中间件，去setting.py中注释一下就可以了
