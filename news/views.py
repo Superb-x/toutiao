@@ -17,7 +17,7 @@ def index(request):
 def register(request):
     if request.method == 'POST':
         userform = UserForm(request.POST)
-        if userform .is_valid():
+        if userform.is_valid():
             username = userform.cleaned_data['username']
             password = userform.cleaned_data['password']
             email = userform.cleaned_data['email']
